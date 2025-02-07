@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela responsiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+        .table{
+            margin: 200px auto 200px auto;
+            box-shadow: 0 4px 8px rgba(0,0,5,0,8);
+        }
+
+        .navbar-brand{
+            font-size: 1.6rem;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .navbar{
+            background-color: blue;
+            padding: 10px 20px;
+        }
+
+        .nav-link{
+            color: #ffffff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            background-color: 0.3s;
+        }
+
+        .navbar-nav .nav-link{
+            color: #ffffff;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            background-color: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover{
+            color: black;
+            border-radius: 5px;
+            background-color: red;
+        }
+
+        footer{
+            background-color: gray;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer{
+            font-size: 1.4rem;
+            color: white;
+            margin: 0 10px;        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Explorar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Tela Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Localização de Filiais</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mais
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Opções</a></li>
+                      <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <table class="table table-bordered">
+        <tr class="table-primary">
+            <th>Responsavel Pelas Filiais</th>
+            <th>Ação planejada</th>
+            <th class="d-none d-md-table-cell">Periodo</th>
+            <th class="d-none d-md-table-cell">Status</th>
+        </tr>
+        <tr>
+            <td>Edgar Hyomen Sukuna</td>
+            <td>Expandir Nosso Dominio</td>
+            <td class="d-none d-md-table-cell">Mensal</td>
+            <td class="d-none d-md-table-cell">Em Expansão</td>
+    </table>
+
+    <footer>
+        <div class="row"></div>
+        <div class="col-md-">
+            <h3>Mahoraga Adaptações</h3>
+            <p>&copy; 2025 | Todos os direitos reservados</p>
+        </div>
+            <div class="col-md-12 text-md-end">   
+            <h3>Nos siga nas redes Sociais</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-globe"></i></a>
+            </div> 
+        </div>   
+        </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 
